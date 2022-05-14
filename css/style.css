@@ -25,22 +25,19 @@ header.menu{
 
 #lupa{
     display: none;  
+    margin: auto;
 }
 
 [clickable]{  
     cursor: pointer ;
 }   
 
-.search{
+#search{
     width: 0em;
+    height: 2.5em;
     visibility: collapse;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-#lupa:checked + .search{
-    visibility: visible;
-    width: 10em;
+    color: white;
+    text-decoration: black;
 }
 
 /* MAIN PAGE  */

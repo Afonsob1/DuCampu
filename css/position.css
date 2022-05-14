@@ -26,6 +26,19 @@ body{
     display: inline-block;
 }
 
+.menu #search{
+    visibility: collapse;
+    width: 0;
+    transition: width 200ms ease, visibility 200ms ease;
+}
+
+.menu #lupa:checked ~ #search{
+
+    width: calc(100% - 2em);
+    color: black;
+    background-color: white;
+    visibility: visible;
+}
 
 /* FOOTER */
 

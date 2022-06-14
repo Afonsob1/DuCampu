@@ -155,10 +155,13 @@ body{
 
 }
 
+
+
 #profile_page .page .order{
   border-style: solid;
   border-width: 1px;
   padding: 1em;
+  width: fit-content;
 }
 
 #profile_page .page .order .date{
@@ -186,13 +189,28 @@ body{
   width: 100%;
 }
 
-.page #active_orders_owner table{
+.page #active_orders_owner main{
   width: 100%;
-  text-align: left;
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-.page #active_orders_owner table th{
-  width: 33.33%;
+@media (max-width: 60em){
+  
+  .page #active_orders_owner main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page #active_orders_owner section > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  
 }
 
 
@@ -271,10 +289,8 @@ body{
 #profile_page  {
   display: flex;
 }
-
 /* orders */
 .order{
-  width: 13em;
   margin-bottom: 0.5em;
 }
 
